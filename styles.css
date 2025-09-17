@@ -1,0 +1,82 @@
+.app-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background: #fdfdfd;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+nav a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #007bff;
+}
+.flex-layout {
+  display: flex;
+  gap: 20px;
+}
+.profile-card {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f8f9fa;
+  text-align: center;
+}
+.list-section {
+  flex: 2;
+}
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.item:hover {
+  background-color: #e9ecef;
+}
+.item.got {
+  text-decoration: line-through;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.item-text {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.remove-btn:hover {
+  background-color: #c82333;
+}
+#itemStats, .filters {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+.filters button {
+  margin-right: 5px;
+}
