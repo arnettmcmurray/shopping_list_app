@@ -3,51 +3,46 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Shopping List Manager</title>
+    <title>Shopping List</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="app-container">
       <header>
-        <h2>Shopping List Manager</h2>
+        <h2>🛒 Shopping List</h2>
         <nav>
           <a href="index.html">List</a> | <a href="profile.html">Profile</a> |
           <a href="register.html">Register</a>
         </nav>
       </header>
-
       <main class="flex-layout">
-        <aside class="profile-card">
-          <h3>User Profile</h3>
-          <img src="https://avatar.iran.liara.run/public" />
-          <p><strong>Name:</strong> Demo User</p>
-          <p><strong>Email:</strong> user@example.com</p>
-        </aside>
-
         <section class="list-section">
           <form id="itemForm">
             <input
               type="text"
               id="itemInput"
-              placeholder="Enter new item..."
+              placeholder="Add item..."
               required
             />
-            <button type="submit" class="button">Add Item</button>
+            <button type="submit">Add</button>
           </form>
           <ul id="itemList" class="item-list"></ul>
-          <div id="itemStats">
-            <p>
-              Total: <span id="totalItems">0</span> | Got:
-              <span id="gotItems">0</span> | Remaining:
-              <span id="remainingItems">0</span>
-            </p>
-          </div>
+          <div id="itemStats"></div>
           <div class="filters">
-            <button data-filter="all">All</button>
-            <button data-filter="got">Got</button>
-            <button data-filter="need">Need</button>
+            <button type="button" id="filterAll">All</button>
+            <button type="button" id="filterGot">Got</button>
+            <button type="button" id="filterNeed">Need</button>
           </div>
         </section>
+        <aside class="profile-card">
+          <h3>Profile</h3>
+          <img
+            src="https://avatar.iran.liara.run/public"
+            alt="Profile Picture"
+          />
+          <p id="profileName">Demo User</p>
+          <p id="profileEmail">demo@example.com</p>
+        </aside>
       </main>
     </div>
     <script src="scripts.js"></script>
